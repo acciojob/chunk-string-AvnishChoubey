@@ -1,5 +1,6 @@
 function stringChop(str, size) {
   // your code here
+	if(str === null) return [];
 	size = parseInt(size);
 	let arr = [];
 	let i = 0;
@@ -7,8 +8,7 @@ function stringChop(str, size) {
 		arr.push(str.slice(i, i + size));
 		i += size;
 	}
-	console.log(arr)
-	
+	console.log(arr);
 	return arr;
 }
 
