@@ -1,10 +1,14 @@
 function stringChop(str, size) {
   // your code here
+	size = parseInt(size);
 	let arr = [];
-	
-	for(let i = 0; i < str.length; i += size) {
+	let i = 0;
+	while(i < str.length) {
 		arr.push(str.slice(i, i + size));
+		i += size;
 	}
+	console.log(arr)
+	
 	return arr;
 }
 
